@@ -1,0 +1,7 @@
+<form>
+  <div *ngFor="let control of formModel">
+    <app-form-control [type]="control.type" [form]="formGroup" [controlName]="control.name" [label]="control.label" [options]="control.options!">
+    </app-form-control>
+  </div>
+  <app-form-buttons></app-form-buttons>
+</form>

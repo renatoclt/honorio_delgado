@@ -1,0 +1,16 @@
+<div *ngIf="type === typeFormControlEnum.INPUT" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px" class="container">
+  <app-label [text]="label" dir="ltr" ></app-label>
+  <app-input></app-input>
+</div>
+<div *ngIf="type === typeFormControlEnum.SELECT" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px" class="container">
+  <app-label [text]="label" dir="ltr" ></app-label>
+  <app-select [controlName]="controlName" [form]="form" [options]="options"></app-select>
+</div>
+<div *ngIf="type === typeFormControlEnum.CHECK" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px" class="container">
+  <app-label [text]="label" dir="ltr" ></app-label>
+  <app-checkbox></app-checkbox>
+</div>
+<div *ngIf="type === typeFormControlEnum.DATE" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px" class="container">
+  <app-label [text]="label" dir="ltr" ></app-label>
+  <app-date [controlName]="controlName" [form]="form"></app-date>
+</div>

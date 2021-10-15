@@ -1,7 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AreaComponent } from './pages/area/area.component';
+import { DepartamentComponent } from './pages/departament/departament.component';
+import { LevelComponent } from './pages/level/level.component';
+import { PersonalInformationComponent } from './pages/personal-information/personal-information.component';
+import { PositionComponent } from './pages/position/position.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'area', component: AreaComponent },
+  { path: 'departamento', component: DepartamentComponent },
+  { path: 'nivel', component: LevelComponent },
+  { path: 'informacion-personal', component: PersonalInformationComponent },
+  { path: 'position', component: PositionComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
