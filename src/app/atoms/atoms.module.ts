@@ -17,10 +17,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { CalendarModule } from 'primeng/calendar';
 import {InputTextModule} from 'primeng/inputtext';
+import { IconsComponent } from './icons/icons.component';
+import { ImageComponent } from './image/image.component';
 
 
 @NgModule({
-  declarations: [ButtonComponent, LabelComponent, InputComponent, SelectComponent, DateComponent, CheckboxComponent],
+  declarations: [ButtonComponent, LabelComponent, InputComponent, SelectComponent, DateComponent, CheckboxComponent, IconsComponent, ImageComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -39,7 +41,9 @@ import {InputTextModule} from 'primeng/inputtext';
     InputComponent,
     SelectComponent,
     DateComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    IconsComponent,
+    ImageComponent
   ]
 })
 export class AtomsModule { }

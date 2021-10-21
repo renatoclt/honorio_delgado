@@ -12,6 +12,8 @@ export class FormComponent implements OnInit {
 
   formModel: FormModel[] = [];
 
+  @Input() title = '';
+
   @Input() set form(groups: FormModel[]) {
     this.formModel = groups;
     groups.forEach((group) => {
