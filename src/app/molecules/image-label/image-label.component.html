@@ -1,4 +1,6 @@
-<app-image [image]="imageLabel.image"></app-image>
-<div>
-  <app-label *ngFor="let word of imageLabel.text" [text]="word"></app-label>
+<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px" class="header-padding">
+  <app-image [image]="imageLabel.image"></app-image>
+  <div fxLayout="column" fxLayoutAlign="center center"  fxLayoutGap="6px">
+    <app-label *ngFor="let label of imageLabel.label" [label]="label" ></app-label>
+  </div>
 </div>

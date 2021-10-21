@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators } from '@angular/forms';
-import { TypeFormControlEnum } from 'src/app/molecules/form-control/model/type-form-control.enum';
+import { LabelModel } from 'src/app/atoms/label/model/label.dto';
+import { TypeFormControlEnum } from 'src/app/molecules/form-control/properties/type-form-control.enum';
 import { FormModel } from 'src/app/organisms/form/model/form.model';
 
 @Component({
@@ -10,7 +11,7 @@ import { FormModel } from 'src/app/organisms/form/model/form.model';
 })
 export class DepartamentComponent implements OnInit {
 
-  title = 'Departamento';
+  title = new LabelModel('Departamento');
 
   form: FormModel[] = [];
 
@@ -28,7 +29,7 @@ export class DepartamentComponent implements OnInit {
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.INPUT,
-        label: 'Descripcion'
+        label: new LabelModel('Descripcion')
       }
     ];
   }

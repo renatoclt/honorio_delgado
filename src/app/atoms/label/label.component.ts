@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LabelModel } from './model/label.dto';
 
 @Component({
   selector: 'app-label',
@@ -7,8 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class LabelComponent {
 
-  @Input() text = '';
+  @Input() label: LabelModel;
 
-  constructor() { }
+  constructor() {
+    this.label = new LabelModel();
+  }
 
 }

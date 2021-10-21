@@ -1,10 +1,11 @@
 import { ImageModel } from "src/app/atoms/image/model/image.dto";
+import { LabelModel } from "src/app/atoms/label/model/label.dto";
 
 export class ImageLabelModel{
   image: ImageModel;
-  text: string[];
-  constructor(image?: ImageModel, text?: string[]){
+  label: LabelModel[];
+  constructor(image?: ImageModel, label?: LabelModel[]){
     this.image = image ? image : new ImageModel();
-    this.text = text ? text : [];
+    this.label = label ? label : [];
   }
 }

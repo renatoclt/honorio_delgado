@@ -1,4 +1,4 @@
-import { TypeFormControlEnum } from './type-form-control.enum';
+import { TypeFormControlEnum } from '../properties/type-form-control.enum';
 
 export class TypeFormControl{
   type: TypeFormControlEnum;

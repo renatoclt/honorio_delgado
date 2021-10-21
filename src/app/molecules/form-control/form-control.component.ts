@@ -1,7 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { AbstractControl, FormControl, FormGroup } from '@angular/forms';
+import { AbstractControl, FormGroup } from '@angular/forms';
+import { LabelModel } from 'src/app/atoms/label/model/label.dto';
 import { SelectOptionsModel } from 'src/app/atoms/select/model/select-options.model';
-import { TypeFormControlEnum } from './model/type-form-control.enum';
+import { TypeFormControlEnum } from './properties/type-form-control.enum';
 
 @Component({
   selector: 'app-form-control',
@@ -16,7 +17,7 @@ export class FormControlComponent implements OnInit {
 
   @Input() controlName = '';
 
-  @Input() label = '';
+  @Input() label: LabelModel = new LabelModel();
 
   @Input() options: SelectOptionsModel[] = [];
 

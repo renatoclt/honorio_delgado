@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LabelComponent } from 'src/app/atoms/label/label.component';
+import { LabelModel } from 'src/app/atoms/label/model/label.dto';
 
 @Component({
   selector: 'app-title',
@@ -7,8 +9,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TitleComponent {
 
-  @Input() title = '';
+  @Input() title: LabelModel;
 
-  constructor() { }
+  constructor() {
+    this.title = new LabelModel();
+  }
 
 }

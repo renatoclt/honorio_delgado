@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators } from '@angular/forms';
-import { TypeFormControlEnum } from 'src/app/molecules/form-control/model/type-form-control.enum';
+import { LabelModel } from 'src/app/atoms/label/model/label.dto';
+import { TypeFormControlEnum } from 'src/app/molecules/form-control/properties/type-form-control.enum';
 import { FormModel } from 'src/app/organisms/form/model/form.model';
 import { BloodGroupService } from '../services/blood-group.service';
 import { DepartamentService } from '../services/departament.service';
@@ -16,7 +17,7 @@ import { ProvinceService } from '../services/province.service';
 })
 export class PersonalInformationComponent implements OnInit {
 
-  title = 'Información Personal';
+  title = new LabelModel('Información Personal');
 
   form: FormModel[] = [];
 
@@ -41,35 +42,35 @@ export class PersonalInformationComponent implements OnInit {
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.INPUT,
-        label: 'Código persona'
+        label: new LabelModel('Código persona')
       },
       {
         name: 'lastNameFather',
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.INPUT,
-        label: 'Apellido Paterno'
+        label: new LabelModel('Apellido Paterno')
       },
       {
         name: 'lastNameMother',
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.INPUT,
-        label: 'Apellido Materno'
+        label: new LabelModel('Apellido Materno')
       },
       {
         name: 'name',
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.INPUT,
-        label: 'Nombres'
+        label: new LabelModel('Nombres')
       },
       {
         name: 'documentType',
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.SELECT,
-        label: 'Tipo de documento',
+        label: new LabelModel('Tipo de documento'),
         options: this.documentTypeService.getAllDocumentType()
       },
       {
@@ -77,21 +78,21 @@ export class PersonalInformationComponent implements OnInit {
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.INPUT,
-        label: 'Nro de documento'
+        label: new LabelModel('Nro de documento')
       },
       {
         name: 'dateOfBirth',
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.DATE,
-        label: 'Fecha de nacimiento'
+        label: new LabelModel('Fecha de nacimiento')
       },
       {
         name: 'Gender',
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.SELECT,
-        label: 'Sexo',
+        label: new LabelModel('Sexo'),
         options: this.genderService.getAllGender()
       },
       {
@@ -99,7 +100,7 @@ export class PersonalInformationComponent implements OnInit {
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.SELECT,
-        label: 'Grupo Sanguíneo',
+        label: new LabelModel('Grupo Sanguíneo'),
         options: this.bloodGroupService.getAllBloodGroup()
       },
       {
@@ -107,7 +108,7 @@ export class PersonalInformationComponent implements OnInit {
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.SELECT,
-        label: 'Estado Civil',
+        label: new LabelModel('Estado Civil'),
         options: this.maritalStatusService.getAllMaritalStatus()
       },
       {
@@ -115,7 +116,7 @@ export class PersonalInformationComponent implements OnInit {
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.SELECT,
-        label: 'Departamento',
+        label: new LabelModel('Departamento'),
         options: this.departamentService.getAllDepartament()
       },
       {
@@ -123,7 +124,7 @@ export class PersonalInformationComponent implements OnInit {
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.SELECT,
-        label: 'Provincia',
+        label: new LabelModel('Provincia'),
         options: this.provinceService.getAllProvince()
       },
       {
@@ -131,35 +132,35 @@ export class PersonalInformationComponent implements OnInit {
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.INPUT,
-        label: 'Dirección',
+        label: new LabelModel('Dirección'),
       },
       {
         name: 'mail',
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.INPUT,
-        label: 'e-mail'
+        label: new LabelModel('e-mail')
       },
       {
         name: 'mobile',
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.INPUT,
-        label: 'Celular'
+        label: new LabelModel('Celular')
       },
       {
         name: 'telephone',
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.INPUT,
-        label: 'Teléfono'
+        label: new LabelModel('Teléfono')
       },
       {
         name: 'active',
         validators: [Validators.required],
         value: '',
         type: TypeFormControlEnum.CHECK,
-        label: 'Activo'
+        label: new LabelModel('Activo')
       },
 
 
