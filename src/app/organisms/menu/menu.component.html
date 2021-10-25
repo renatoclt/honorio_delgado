@@ -1,0 +1,10 @@
+<div class="menu-background" fxLayout="column" fxFlexFill fxFlex>
+  <ng-container *ngTemplateOutlet="recursiveMenu; context: { $implicit: menus }">
+  </ng-container>
+  <ng-template #recursiveMenu let-menus>
+      <app-menu-list *ngFor="let menu of menus" [menu]="menu">
+        <ng-container *ngTemplateOutlet="recursiveMenu; context: { $implicit: menu.menu }">
+        </ng-container>
+      </app-menu-list>
+  </ng-template>
+</div>

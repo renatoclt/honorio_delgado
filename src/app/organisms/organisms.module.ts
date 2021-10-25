@@ -5,17 +5,29 @@ import { FormComponent } from './form/form.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MenuComponent } from './menu/menu.component';
+import { TableComponent } from './table/table.component';
+import { TableModule } from 'primeng/table';
 
 
 
 @NgModule({
-  declarations: [FormComponent, HeaderComponent],
+  declarations: [
+    FormComponent,
+    HeaderComponent,
+    MenuComponent,
+    TableComponent],
   imports: [
     CommonModule,
     MoleculesModule,
     FormsModule,
     ReactiveFormsModule,
-    FlexLayoutModule
-  ], exports: [FormComponent, HeaderComponent]
+    FlexLayoutModule,
+    TableModule
+  ], exports: [
+    FormComponent,
+    HeaderComponent,
+    MenuComponent,
+    TableComponent]
 })
 export class OrganismsModule { }

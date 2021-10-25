@@ -8,11 +8,12 @@ import { AreaComponent } from './area/area.component';
 import { PositionComponent } from './position/position.component';
 import { LevelComponent } from './level/level.component';
 import { HomeComponent } from './home/home.component';
+import { ReportComponent } from './report/report.component';
 
 
 
 @NgModule({
-  declarations: [PersonalInformationComponent, DepartamentComponent, AreaComponent, PositionComponent, LevelComponent, HomeComponent],
+  declarations: [PersonalInformationComponent, DepartamentComponent, AreaComponent, PositionComponent, LevelComponent, HomeComponent, ReportComponent],
   imports: [
     CommonModule,
     TemplatesModule

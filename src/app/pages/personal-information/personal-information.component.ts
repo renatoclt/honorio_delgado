@@ -3,12 +3,12 @@ import { Validators } from '@angular/forms';
 import { LabelModel } from 'src/app/atoms/label/model/label.dto';
 import { TypeFormControlEnum } from 'src/app/molecules/form-control/properties/type-form-control.enum';
 import { FormModel } from 'src/app/organisms/form/model/form.model';
-import { BloodGroupService } from '../services/blood-group.service';
-import { DepartamentService } from '../services/departament.service';
-import { DocumentTypeService } from '../services/document-type.service';
-import { GenderService } from '../services/gender.service';
-import { MaritalStatusService } from '../services/marital-status.service';
-import { ProvinceService } from '../services/province.service';
+import { BloodGroupService } from '../../services/blood-group.service';
+import { DepartamentService } from '../../services/departament.service';
+import { DocumentTypeService } from '../../services/document-type.service';
+import { GenderService } from '../../services/gender.service';
+import { MaritalStatusService } from '../../services/marital-status.service';
+import { ProvinceService } from '../../services/province.service';
 
 @Component({
   selector: 'app-personal-information',

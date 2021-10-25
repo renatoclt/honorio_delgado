@@ -19,10 +19,21 @@ import { CalendarModule } from 'primeng/calendar';
 import {InputTextModule} from 'primeng/inputtext';
 import { IconsComponent } from './icons/icons.component';
 import { ImageComponent } from './image/image.component';
-
+import { MenuItemComponent } from './menu-item/menu-item.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [ButtonComponent, LabelComponent, InputComponent, SelectComponent, DateComponent, CheckboxComponent, IconsComponent, ImageComponent],
+  declarations: [
+    ButtonComponent,
+    LabelComponent,
+    InputComponent,
+    SelectComponent,
+    DateComponent,
+    CheckboxComponent,
+    IconsComponent,
+    ImageComponent,
+    MenuItemComponent,
+    ],
   imports: [
     CommonModule,
     BrowserModule,
@@ -33,7 +44,8 @@ import { ImageComponent } from './image/image.component';
     FormsModule,
     ReactiveFormsModule,
     CalendarModule,
-    InputTextModule
+    InputTextModule,
+    RouterModule
   ],
   exports: [
     ButtonComponent,
@@ -43,7 +55,8 @@ import { ImageComponent } from './image/image.component';
     DateComponent,
     CheckboxComponent,
     IconsComponent,
-    ImageComponent
+    ImageComponent,
+    MenuItemComponent
   ]
 })
 export class AtomsModule { }

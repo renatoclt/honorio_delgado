@@ -1,1 +1,9 @@
 <app-header [headerModel]="headerModel"></app-header>
+<div fxLayout="column" fxFill>
+  <div fxLayout="row" fxFill>
+    <app-menu fxFlex="330px" [menus]="menuModel"></app-menu>
+    <div fxFlex>
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

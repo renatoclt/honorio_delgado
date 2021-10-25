@@ -1,16 +1,17 @@
-<div *ngIf="type === typeFormControlEnum.INPUT" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px" class="container">
-  <app-label [label]="label" dir="ltr" ></app-label>
-  <app-input></app-input>
+<div *ngIf="type === typeFormControlEnum.INPUT" fxLayout="row" fxFill fxLayoutGap="20px" fxFlex="100" fxFlexOffset="5%">
+  <app-label [label]="label" dir="ltr" fxFlex="30"></app-label>
+  <app-input fxFlex="60" fxFill></app-input>
 </div>
-<div *ngIf="type === typeFormControlEnum.SELECT" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px" class="container">
-  <app-label [label]="label" dir="ltr" ></app-label>
-  <app-select [controlName]="controlName" [form]="form" [options]="options"></app-select>
+<div *ngIf="type === typeFormControlEnum.SELECT" fxLayout="row" fxFill fxLayoutGap="20px" fxFlex="100"
+  fxFlexOffset="5%">
+  <app-label [label]="label" dir="ltr" fxFlex="30"></app-label>
+  <app-select [controlName]="controlName" [form]="form" [options]="options" fxFlex="60" fxFill> </app-select>
 </div>
-<div *ngIf="type === typeFormControlEnum.CHECK" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px" class="container">
-  <app-label [label]="label" dir="ltr" ></app-label>
-  <app-checkbox></app-checkbox>
+<div *ngIf="type === typeFormControlEnum.CHECK" fxLayout="row" fxFill fxLayoutGap="20px" fxFlex="100" fxFlexOffset="5%">
+  <app-label [label]="label" dir="ltr" fxFlex="30"></app-label>
+  <app-checkbox fxFlex="60" fxFill></app-checkbox>
 </div>
-<div *ngIf="type === typeFormControlEnum.DATE" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px" class="container">
-  <app-label [label]="label" dir="ltr" ></app-label>
-  <app-date [controlName]="controlName" [form]="form"></app-date>
+<div *ngIf="type === typeFormControlEnum.DATE" fxLayout="row" fxFill fxLayoutGap="20px" fxFlex="100" fxFlexOffset="5%">
+  <app-label [label]="label" dir="ltr" fxFlex="30"></app-label>
+  <app-date [controlName]="controlName" [form]="form" fxFlex="60" fxFill></app-date>
 </div>
