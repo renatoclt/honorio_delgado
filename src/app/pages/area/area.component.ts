@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Validators } from '@angular/forms';
 import { LabelModel } from 'src/app/atoms/label/model/label.dto';
 import { TypeFormControlEnum } from 'src/app/molecules/form-control/properties/type-form-control.enum';
+import { TypeTableDateEnum } from 'src/app/molecules/table-date/properties/type-table-date.enum';
 import { FormModel } from 'src/app/organisms/form/model/form.model';
 import { AreaService } from 'src/app/services/area.service';
 import { HeaderTableModel } from 'src/app/templates/header-table/model/header-table.dto';
@@ -46,11 +47,18 @@ export class AreaComponent implements OnInit {
       tableHeader: [
         {
           title: 'Código',
-          name: 'code'
+          name: 'code',
+          type: TypeTableDateEnum.TEXT
         },
         {
           title: 'Nombre',
-          name: 'name'
+          name: 'name',
+          type: TypeTableDateEnum.TEXT
+        },
+        {
+          title: '',
+          name: 'actions',
+          type: TypeTableDateEnum.EDIT_DELETE
         },
       ]
     };

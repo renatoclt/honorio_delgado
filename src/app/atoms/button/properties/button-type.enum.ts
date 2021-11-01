@@ -1,3 +1,5 @@
-export enum ButtonTypeEnum{
-  btnPrimary = 'p-button-raised'
+export enum TypeButtonEnum{
+  NONE = '',
+  ICON = 'button-circle',
+  TEXT = 'p-button-raised'
 }

@@ -10,7 +10,8 @@ export class HeaderTableComponent implements OnInit {
 
   @Input() headerTable!: HeaderTableModel;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

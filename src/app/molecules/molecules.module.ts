@@ -33,6 +33,7 @@ import { TableDateComponent } from './table-date/table-date.component';
     FormButtonsComponent,
     ImageLabelComponent,
     MenuListComponent,
+    TableDateComponent
     ]
 })
 export class MoleculesModule { }

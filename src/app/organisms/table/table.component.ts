@@ -8,11 +8,11 @@ import { TableHeaderModel } from './model/table-header.dto';
 })
 export class TableComponent implements OnInit {
 
-  @Input() items = [] ;
+  @Input() items!: any[];
   @Input() tableHeader!: TableHeaderModel[];
 
   @Input() textAction = '';
-  @Input() Action = true;
+  @Input() action = true;
 
   constructor() { }
 

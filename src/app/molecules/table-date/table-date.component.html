@@ -1,1 +1,7 @@
-<p>table-date works!</p>
+<div [ngSwitch]="type">
+  <app-label *ngSwitchCase="typeTableDate.TEXT" [label]="label"></app-label>
+  <ng-container *ngSwitchCase="typeTableDate.EDIT_DELETE">
+    <app-button ty></app-button>
+  </ng-container>
+  <span *ngSwitchDefault>-</span>
+</div>
